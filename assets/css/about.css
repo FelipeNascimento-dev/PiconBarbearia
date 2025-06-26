@@ -47,13 +47,14 @@
     line-height: 1.7;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.about-image::after, .about-image::before{
+.about-image::after,
+.about-image::before {
     --angle: 0deg;
     content: '';
     position: absolute;
@@ -69,7 +70,33 @@
     animation: 3s spin linear infinite;
 }
 
-.about-image::before{
+.about-image::before {
     filter: blur(1.5rem);
     opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .about-container h2 {
+        font-size: 2rem;
+    }
+
+    .about-container h3 {
+        font-size: 1rem;
+    }
 }
