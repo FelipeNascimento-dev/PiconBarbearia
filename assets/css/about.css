@@ -39,7 +39,7 @@
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+    
 .about-text {
     max-width: 600px;
     font-size: 1.1rem;
@@ -65,9 +65,9 @@
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
-    padding: 3px;
+    padding: 2px;
     border-radius: 50%;
-    animation: 3s spin linear infinite;
+    animation: 7s spin linear infinite;
 }
 
 .about-image::before {

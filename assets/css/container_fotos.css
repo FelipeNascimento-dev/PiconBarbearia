@@ -33,7 +33,7 @@
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 1px;
+  padding: 3px;
   border-radius: 20px;
   animation: 7s spin linear infinite;
 }
