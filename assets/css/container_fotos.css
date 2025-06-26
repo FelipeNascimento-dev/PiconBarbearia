@@ -33,7 +33,7 @@
     z-index: -1;
     padding: 3px;
     border-radius: 20px;
-    animation: 3s spin linear infinite;
+    animation: 7s spin linear infinite;
 }
 
 .foto-box::before{
