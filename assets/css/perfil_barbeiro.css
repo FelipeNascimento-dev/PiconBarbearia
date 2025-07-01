@@ -73,7 +73,16 @@
     margin-top: 20px;
     font-size: 1.1rem;
     display: flex;
+    /* Já estava certo */
     justify-content: center;
+    align-items: center;
+    /* adicionado */
+    width: 100%;
+    /* garantir que ocupe largura total */
+    flex-wrap: wrap;
+    /* ajuda em telas pequenas */
+    gap: 10px;
+    /* espaço entre elementos caso tenha mais */
 }
 
 .instagram-link a {
@@ -81,11 +90,15 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.08);
     padding: 0.5rem 1rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    min-width: 180px;
+    /* garante tamanho visível */
 }
 
 .instagram-link a:hover {
@@ -97,4 +110,68 @@
     font-size: 1.2rem;
     margin-right: 8px;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .perfil-wrapper {
+        flex-direction: column;
+        margin-top: 4rem;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .foto-perfil img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .info-perfil {
+        padding: 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .info-perfil h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-perfil p {
+        font-size: 1rem;
+    }
+
+    .instagram-link {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .instagram-link a {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-voltar {
+        top: 10px;
+        left: 10px;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .foto-perfil img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .info-perfil {
+        padding: 1rem;
+    }
+
+    .info-perfil h1 {
+        font-size: 1.3rem;
+    }
+
+    .instagram-link a {
+        font-size: 0.95rem;
+    }
 }
