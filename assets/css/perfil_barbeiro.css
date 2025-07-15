@@ -73,16 +73,11 @@
     margin-top: 20px;
     font-size: 1.1rem;
     display: flex;
-    /* Já estava certo */
     justify-content: center;
     align-items: center;
-    /* adicionado */
     width: 100%;
-    /* garantir que ocupe largura total */
     flex-wrap: wrap;
-    /* ajuda em telas pequenas */
     gap: 10px;
-    /* espaço entre elementos caso tenha mais */
 }
 
 .instagram-link a {
@@ -98,7 +93,6 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: 500;
     min-width: 180px;
-    /* garante tamanho visível */
 }
 
 .instagram-link a:hover {
