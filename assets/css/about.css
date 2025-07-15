@@ -99,4 +99,8 @@
     .about-container h3 {
         font-size: 1rem;
     }
+    .about-image::after,
+    .about-image::before {
+        display: none;
+    }
 }
